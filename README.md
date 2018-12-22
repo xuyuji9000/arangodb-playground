@@ -5,6 +5,8 @@
 
 - List databases: `db._databases()`
 
+- Create databases: `db._createDatabase(name, options, users)`
+
 
 # Reference
 
