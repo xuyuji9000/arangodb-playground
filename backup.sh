@@ -1,9 +1,17 @@
 #!/bin/sh
 
-DATABASE=test_db
-BACKUP_ROOT=dump/
+# default value: test_db
+DATABASE=$1
 
-if [ ! -d "$DIRECTORY" ]; then
+if [ -z $DATABASE ]
+then
+    echo DATABASE variable is not set.
+    exit 1
+fi
+
+BACKUP_ROOT=dump
+
+if [ ! -d "$BACKUP_ROOT" ]; then
   echo BACKUP_ROOT $BACKUP_ROOT does not exists.
   mkdir -p $BACKUP_ROOT
   echo Created BACKUP_ROOT $BACKUP_ROOT
