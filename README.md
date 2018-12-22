@@ -7,6 +7,15 @@
 
 - Create databases: `db._createDatabase(name, options, users)`
 
+- List Users:
+
+    ```
+    var users = require("@arangodb/users");
+    users.all();
+    ```
+    
+
+
 
 # Reference
 
