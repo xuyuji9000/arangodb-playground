@@ -9,6 +9,13 @@
 
 - Get command help: `db._help()`
 
+- List Users:
+
+    ```
+    var users = require("@arangodb/users");
+    users.all();
+    ```
+
 
 # Reference
 
