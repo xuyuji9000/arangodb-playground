@@ -7,6 +7,8 @@
 
 - Create databases: `db._createDatabase(name, options, users)`
 
+- Get command help: `db._help()`
+
 
 # Reference
 
